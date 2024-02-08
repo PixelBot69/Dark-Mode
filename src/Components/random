@@ -1,0 +1,13 @@
+ useEffect(() => {
+        if (Dark === "dark"){
+            document.documentElement.classList.add("dark")
+        }
+        else{
+            document.documentElement.classList.remove("dark")
+        }
+
+        
+    }, [Dark]);
+
+
+    const [Dark,SetDark] = useState("light")
